@@ -1,0 +1,102 @@
+.head{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    .header{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 5rem;
+        align-items: center;
+        background: white;
+        height: 10px;
+        font-size: 14px;
+    
+        .h-left{
+            display: flex;
+            gap: 1rem;
+        }
+    
+        .h-right{
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            svg{
+                font-size: 1.2rem;
+            }
+            >:nth-child(1){
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            >:nth-child(2){
+                position: relative;
+                &:hover{
+                    cursor: pointer;
+                }
+                >:nth-child(2){
+                    position: absolute;
+                    background: $pink;
+                    border-radius: 50%;
+                    color: white;
+                    width: 0.9rem;
+                    height: 0.9rem;
+                    font-size: 0.7rem;
+                    top: -4px;
+                    right: -5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            >:nth-child(3){
+                >svg:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .search-container{
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        display: none;
+        &.show-search{
+            display: flex;
+            transition: display 0.3s ease-in-out;
+        }
+        .input-container{
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid $blue-300;
+            background: $blue-300;
+            input{
+                width: 100%;
+                height: 100%;
+                padding: 0.5rem;
+                font-size: 14px;
+                border: none;
+                outline: none;
+            }
+            >button{
+                padding: 0.5rem 0.7rem;
+                background: $blue-300;
+                color: #fff;
+                height: 100%;
+                border: none;
+                font-size: 14px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

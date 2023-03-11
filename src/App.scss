@@ -1,0 +1,29 @@
+@import './styles/base.scss';
+
+.App{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: $gray;
+  font-size: 1rem;
+  box-sizing: border-box;
+
+  a{
+    text-decoration: none;
+    color: $text;
+  }
+}
+
+::-webkit-scrollbar{
+  height: 10px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: rgba(255, 255, 255, 0.089);
+  border-radius: 1ex;
+}
+::-webkit-scrollbar-thumb{
+  background: $blue-300;
+  border-radius: 1ex;
+}

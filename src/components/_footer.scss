@@ -1,0 +1,94 @@
+.footer{
+    background: $blue-100;
+    margin-top: 5rem;
+    padding: 9rem 7rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: $text;
+
+    .f-top{
+        display:flex;
+        justify-content: space-between;
+
+        >div{
+            display: flex;
+            flex-direction: column;
+            width: 230px;
+            >span:nth-child(1){
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                gap: 0.8rem;
+                font-size: 16px;
+                margin-bottom: 1rem;
+            }
+            >span:nth-child(2){
+                font-size: 14px;
+                line-height: 1.4;
+            }
+            >span:nth-child(3){
+                display: flex;
+                gap: 1.2rem;
+                margin-top: 1rem;
+                span:nth-of-type(1){
+                    svg{
+                        color: #3b5998;
+                        font-size: 1.2rem;
+                    }
+                }
+                span:nth-of-type(2){
+                    svg{
+                            color: #00acee;
+                            font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+    .f-mid{
+        display: flex;
+        align-items: center;
+        margin-top: 4rem;
+        justify-content: space-between;
+
+        div{
+            span{
+            font-weight: bold;
+            }
+            ul{
+                list-style: none;
+                padding: 0;
+                line-height: 1.4;
+                font-size: 14px;
+                li:hover{
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .f-bottom{
+        margin-top: 2rem;
+        hr{
+            height: 2px;
+            border: none;
+            background: #fff;
+            margin-bottom: 1rem;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            :nth-child(1){
+                color: #999;
+                font-size: 13px;
+            }
+            :nth-child(2){
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 5rem;
+    border-top: 1px solid $gray;
+    box-shadow: rgba(17,17,26,0.1) 0px 1px 0px;
+    justify-content: space-between;
+    background: white;
+
+    .logo{
+        a{
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            
+            &:hover{
+                cursor: pointer;
+            }
+            >:nth-child(1){
+                width: 2.2rem;
+            }
+            >:nth-child(2){
+                font-weight: bold;
+            }
+        }
+    }
+
+    .nav-menu{
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        li{
+            list-style: none;
+            a{
+                text-transform: uppercase;
+                font-weight: 600;
+                &:hover{
+                    color: $blue-300;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@import './variables';
+// header styles
+@import '../components/header.scss';
+@import '../components/navbar.scss';
+// home styles
+@import '../routes/home.scss';
+@import '../components/slides/hero.scss';
+@import '../components/slides/slide.scss';
+@import '../components/bestSeller';
+@import '../components/slides/latestNews.scss';
+@import '../components/slides/featured.scss';
+@import '../components/footer.scss';

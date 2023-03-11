@@ -1,0 +1,44 @@
+.promo-wrapper{
+    position: relative;
+    overflow: hidden;
+    
+    .swiper{
+        width: 100%;
+        height: 100%;
+        
+        .swiper-slide{
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            >:nth-child(1){
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+            >:nth-child(2){
+                position: absolute;
+                color: white;
+                top: 40%;
+                left: 8%;
+                font-size: 3.5rem;
+                font-weight: bold;
+                display: block;
+                max-width: 40%;
+                line-height: 1.5;
+                text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+            }
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next{
+            color: $gray;
+            opacity: 0.5;
+        }
+        .swiper-pagination-bullet-active{
+            background: $gray;
+        }
+    }
+}
