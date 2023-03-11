@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Products } from "../data/productData";
 import ProductCard from "./cards/ProductCard";
+import {useAutoAnimate} from '@formkit/auto-animate/react'
 
 const BestSeller = () => {
+  const [parent] = useAutoAnimate()
   const [MiniMenu, setMiniMenu] = useState(Products);
 
   const filter = (category) => {
@@ -20,7 +22,7 @@ const BestSeller = () => {
         <li onClick={() => filter("sunglasses")}>Sunglasses</li>
       </ul>
 
-      <div className="p-list">
+      <div className="p-list" ref={parent}>
         {MiniMenu.map((item, i) => {
           return (
             <ProductCard
